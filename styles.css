@@ -1,4 +1,6 @@
-
+html, body {
+    overflow-x: hidden;
+}
         .iphone {
             width: 360px;
             height: 720px;
