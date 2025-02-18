@@ -5,9 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>Quinn Morrison</title>
 </head>
-<body class="bg-base-200">
-    <h3>Quinn Morrison</h3>
+<body>
+    <div class="card card-side bg-base-300 shadow-xl w-full h-96">
+        <figure>
+            <img
+              src="/assets/headshot.jpeg"
+              alt="Quinn Morrison Headshot"
+              class="w-96 h-96 rounded-full"
+               />
+          </figure>
+        <div class="card-body flex justify-center items-center">
+            <h1 class="text-5xl text-white font-bold font-mono">Quinn Morrison</h1>
+            <h3 class="text-3xl text-white font-mono">Full Stack Mobile/Web/Audio Programming</h3>
+        </div>
+    </div>
+    <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 ml-8">About Me</h1>
+
+    
+    <div data-aos="fade-up" class="flex justify-center items-center mt-16">
+        <div class="card bg-secondary shadow-xl w-3/4 h-56">
+            <div class="card-body flex justify-center items-center">
+                <p class="text-white text-lg">
+                    Hello! I'm Quinn Morrison, a student at Tennessee Tech
+                </p>
+                <p class="text-white text-lg">
+                    I have a soft spot for Full Stack Web/Mobile/Audio programming.
+                </p>
+                <p class="text-white text-lg">
+                    In my free time I produce music and lead the Software Development Club at my school.
+                </p>
+                <hr />
+                <p class="text-white text-lg">
+                    Below are some examples of my work
+                </p>
+            </div>
+        </div>
+    </div> 
+    <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 ml-8">Projects</h1>
+
+    <div data-aos="fade-up" class="flex justify-center items-center mt-32 mx-32">
+        <div class="card bg-accent w-1/3 mr-12">
+            <figure>
+                <img
+                  src="assets/qvcademy_logo.png"
+                  alt="qvcademy logo" />
+            </figure>
+            <div class="card-body h-80">
+                <h2 class="card-title text-white">Qvcademy</h2>
+                <p class="text-white">Lead full stack developer of Qvcademy, a web application designed to teach programmers how to code in new languages quickly. Using quick documentation and programming challenges, it's a great place to learn new languages.</p>
+                <p class="text-white mt-4">Technologies used: React, Monaco Editor, Nodejs, SQL</p>
+            </div>
+        </div>
+        <div class="card bg-accent w-1/3">
+            <figure>
+                <img
+                  src="assets/YOURTOUR2.png"
+                  alt="Shoes" />
+            </figure>
+            <div class="card-body h-80">
+                <h2 class="card-title text-white">YourTour</h2>
+                <p class="text-white">Lead front end developer of YourTour, a mobile navigation app that turns any drive into a tour! YourTour takes the user's current location and generates facts and trivia about towns and cities as the drive progresses.</p>
+                <p class="text-white mt-4">Technologies used: Flutter, OSM, OSRM</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
