@@ -8,7 +8,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Quinn Morrison</title>
 </head>
 <body>
@@ -26,27 +27,23 @@
         </div>
     </div>
     <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 ml-8">About Me</h1>
+        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 ml-8">About Me</h1>
     </div>
 
     
     <div data-aos="fade-up" class="flex justify-center items-center mt-16">
-        <div class="card bg-secondary shadow-xl w-3/4 h-56">
-            <div class="card-body flex justify-center items-center">
-                <p class="text-white text-lg">
-                    Hello! I'm Quinn Morrison, a student at Tennessee Tech
-                </p>
-                <p class="text-white text-lg">
-                    I have a soft spot for Full Stack Web/Mobile/Audio programming.
-                </p>
-                <p class="text-white text-lg">
-                    In my free time I produce music and lead the Software Development Club at my school.
-                </p>
-                <hr />
-                <p class="text-white text-lg">
-                    Below are some examples of my work
-                </p>
+        <div class="iphone">
+            <div class="screen">
+                <button id="open-app" class="mt-48 ml-20 bg-secondary text-white px-4 py-2 rounded">Who am I? (Click me)</button>
             </div>
+            <div class="app-screen" id="app-screen">
+                <h1 class="font-bold text-secondary text-xl">Quinn Morrison</h1>
+                <h3 class="font-bold text-secondary text-md">Student at Tn Tech</h3>
+                <p class="font-bold text-secondary mt-6 mx-4">Full stack Mobile, Web, and Audio Developer</p>
+                <p class="font-bold text-secondary mt-6 mx-4">Hobbies: producing music, repairing instruments, and leading the Software Development Club</p>
+                <p class="font-bold text-secondary mt-12 mx-4">(See My Experience Below!)</p>
+            </div>
+            <div class="home-button" id="home-button"></div>
         </div>
     </div> 
     <div data-aos="fade-up">
@@ -273,6 +270,16 @@
                     1024: { slidesPerView: 2.5 }, // Show 2.5 slides on larger screens
                 },
             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("open-app").addEventListener("click", function () {
+            document.getElementById("app-screen").style.transform = "translateY(0%)";
+        });
+
+        document.getElementById("home-button").addEventListener("click", function () {
+            document.getElementById("app-screen").style.transform = "translateY(100%)";
         });
     </script>
     
