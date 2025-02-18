@@ -32,16 +32,38 @@
 
     
     <div data-aos="fade-up" class="flex justify-center items-center mt-16">
-        <div class="iphone">
+        <div class="iphone">         
             <div class="screen">
                 <button id="open-app" class="mt-48 ml-20 bg-secondary text-white px-4 py-2 rounded">Who am I? (Click me)</button>
             </div>
             <div class="app-screen" id="app-screen">
-                <h1 class="font-bold text-secondary text-xl">Quinn Morrison</h1>
-                <h3 class="font-bold text-secondary text-md">Student at Tn Tech</h3>
-                <p class="font-bold text-secondary mt-6 mx-4">Full stack Mobile, Web, and Audio Developer</p>
-                <p class="font-bold text-secondary mt-6 mx-4">Hobbies: producing music, repairing instruments, and leading the Software Development Club</p>
-                <p class="font-bold text-secondary mt-12 mx-4">(See My Experience Below!)</p>
+                <div class="flex flex-col items-center mt-6">
+                    <img src="assets/accountPhoto.jpeg" alt="Profile Picture" class="w-24 h-24 rounded-full border-4 border-gray-300">
+                    <h1 class="font-bold text-gray-800 text-xl mt-2">Quinn Morrison</h1>
+                    <h3 class="font-bold text-gray-600 text-md">Student at Tn Tech</h3>
+                    <p class="text-gray-600 text-sm text-center mt-3 px-4">
+                        Full Stack Mobile, Web, and Audio Developer
+                    </p>
+                    <p class="text-gray-600 text-sm text-center mt-2 px-4">
+                        Hobbies: Producing music, repairing instruments, and leading the Software Development Club
+                    </p>
+                    <span class="badge badge-info mt-2">Developer</span>
+                </div>
+    
+                <!-- Stats Section -->
+                <div class="flex justify-between bg-white shadow-md rounded-lg p-4 mt-5">
+                    <div class="text-center mr-4">
+                        <h3 class="text-xl font-semibold">5</h3>
+                        <p class="text-gray-500 text-sm">Projects</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold">2</h3>
+                        <p class="text-gray-500 text-sm">Years Experience</p>
+                    </div>
+                </div>
+    
+                <!-- Call to Action -->
+                <p class="text-center text-gray-700 mt-8 text-sm">(See My Experience Below!)</p>
             </div>
             <div class="home-button" id="home-button"></div>
         </div>
@@ -281,6 +303,21 @@
         document.getElementById("home-button").addEventListener("click", function () {
             document.getElementById("app-screen").style.transform = "translateY(100%)";
         });
+
+        function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        document.getElementById("time").textContent = timeString;
+        }
+        setInterval(updateTime, 60000); // Update every minute
+        updateTime();
+        function updateTime2() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        document.getElementById("time2").textContent = timeString;
+        }
+        setInterval(updateTime, 60000); // Update every minute
+        updateTime2();
     </script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
