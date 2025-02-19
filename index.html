@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html data-theme="retro" lang="en">
+<html data-theme="nord" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <title>Quinn Morrison</title>
 </head>
 <body>
-    <div class="card card-side bg-base-300 shadow-xl w-full h-96">
+    <div class="card md:card-side bg-base-300 shadow-xl w-full h-96 pl-6">
         <figure>
             <img
               src="/assets/headshot.jpeg"
               alt="Quinn Morrison Headshot"
-              class="w-96 h-96 rounded-full"
+              class="hidden md:block w-96 h-96 rounded-full "
                />
           </figure>
         <div class="card-body flex justify-center items-center">
@@ -27,20 +27,17 @@
         </div>
     </div>
     <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 ml-8">About Me</h1>
+        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 md:ml-8 sm:ml-0">About Me</h1>
     </div>
 
     
     <div data-aos="fade-up" class="flex justify-center items-center mt-16">
         <div class="iphone">         
-            <div class="screen">
-                <button id="open-app" class="mt-48 ml-20 bg-secondary text-white px-4 py-2 rounded">Who am I? (Click me)</button>
-            </div>
-            <div class="app-screen" id="app-screen">
+            <div class="screen" >
                 <div class="flex flex-col items-center mt-6">
                     <img src="assets/accountPhoto.jpeg" alt="Profile Picture" class="w-24 h-24 rounded-full border-4 border-gray-300">
                     <h1 class="font-bold text-gray-800 text-xl mt-2">Quinn Morrison</h1>
-                    <h3 class="font-bold text-gray-600 text-md">Student at Tn Tech</h3>
+                    <h3 class="font-bold text-gray-600 text-md">Student at TN Tech</h3>
                     <p class="text-gray-600 text-sm text-center mt-3 px-4">
                         Full Stack Mobile, Web, and Audio Developer
                     </p>
@@ -69,14 +66,14 @@
         </div>
     </div> 
     <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 ml-8">Projects</h1>
+        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Projects</h1>
     </div>
 
-    <div data-aos="fade-up" class="flex mt-32 mx-32">
+    <div data-aos="fade-up" class="flex items-center mt-32 md:mx-32">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card pt-4 bg-accent w-96">
+                <div class="swiper-slide sm:ml-16 md:ml-0">
+                    <div class="card pt-4 bg-accent w-96 ">
                         <figure>
                             <img
                             src="assets/qvcademy_logo.png"
@@ -87,7 +84,7 @@
                         <div class="card-body h-80">
                             <h2 class="card-title text-white text-3xl">Qvcademy</h2>
                             <p class="text-white">Lead full stack developer of Qvcademy, a web application designed to teach programmers how to code in new languages quickly. Using quick documentation and programming challenges, it's a great place to learn new languages.</p>
-                            <p class="text-info-content text-2xl">Technologies used: React, Monaco Editor, Nodejs, SQL</p>
+                            <p class="text-white text-2xl">Technologies used: React, Monaco Editor, Nodejs, SQL</p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +100,7 @@
                         <div class="card-body h-80">
                             <h2 class="card-title text-white text-3xl">YourTour</h2>
                             <p class="text-white">Lead front end developer of YourTour, a mobile navigation app that turns any drive into a tour! YourTour takes the user's current location and generates facts and trivia about towns and cities as the drive progresses.</p>
-                            <p class="text-info-content mt-6 text-2xl">Technologies used: Flutter, OSM, OSRM</p>
+                            <p class="text-white mt-6 text-2xl">Technologies used: Flutter, OSM, OSRM</p>
                         </div>
                     </div>
                 </div>
@@ -118,8 +115,8 @@
                         </figure>
                         <div class="card-body h-80">
                             <h2 class="card-title text-white text-3xl">Varietees Company Website</h2>
-                            <p class="text-white">Set up Client relationship between software Development Club and Varietees custom t-shirt shop. Helped manage team responsible for the end product.</p>
-                            <p class="text-info-content mt-8 text-2xl">Key Skills: Leadership, Communication with Client</p>
+                            <p class="text-white">Set up client relationship between software Development Club and Varietees custom t-shirt shop. Helped manage team responsible for the end product.</p>
+                            <p class="text-white mt-8 text-2xl">Key Skills: Leadership, Communication with Client</p>
                         </div>
                     </div>
                 </div>
@@ -134,8 +131,8 @@
                         </figure>
                         <div class="card-body h-80">
                             <h2 class="card-title text-white text-3xl">Pj Link</h2>
-                            <p class="text-white">Lead front end developer of YourTour, a mobile navigation app that turns any drive into a tour! YourTour takes the user's current location and generates facts and trivia about towns and cities as the drive progresses.</p>
-                            <p class="text-info-content mt-6 text-2xl">Technologies used: Python, PjLink</p>
+                            <p class="text-white">Created a simple app to reduce diagnostic time around campus on projectors by connecting to them through a python library and checking data.</p>
+                            <p class="text-white mt-16 text-2xl">Technologies used: Python, PjLink</p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +158,7 @@
         </div>
     </div>
     <div data-aos="fade-up">
-            <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 ml-8">Work Experience</h1>
+            <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Work Experience</h1>
     </div>     
             <!-- iCube Job -->
             <div data-aos="fade-right" class="flex">
@@ -170,7 +167,7 @@
                         <img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Dwsq_3wspqVU3NmpjYiU7qgSD3eKZaPmNw&s"
                             alt="iCube logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg"
+                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
                         />
                     </figure>
                     <div class="card-body text-white p-6">
@@ -189,7 +186,7 @@
                         <img
                             src="https://yt3.googleusercontent.com/z375Pnu7UagCRzZw94OJte2--hvWWRWZjvTIo5j-NcyuE-bYesxvfdhoQgKE44OPSdFtJFXNfQ=s900-c-k-c0x00ffffff-no-rj"
                             alt="idTech logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg"
+                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
                         />
                     </figure>
                     <div class="card-body text-white p-6">
@@ -208,7 +205,7 @@
                         <img
                             src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88bf3aa4a5ae34f242116424cc7b47d9"
                             alt="Coding Minds logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg"
+                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
                         />
                     </figure>
                     <div class="card-body text-white p-6">
@@ -222,12 +219,12 @@
     
             <!-- CEROC Job -->
             <div data-aos="fade-left" class="flex justify-end">
-                <div class="card card-side mt-16 mr-16 bg-gradient-to-r from-red-500 to-pink-500 shadow-lg rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
+                <div class="card card-side mt-8 mr-16 bg-gradient-to-r from-red-500 to-pink-500 shadow-lg rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
                     <figure>
                         <img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlE4punrUCAFR1xwnLK62l4HnUyv8UmlxqQ&s"
                             alt="CEROC logo"
-                            class="h-56 w-56 border-4 border-white rounded-full shadow-lg"
+                            class="h-56 w-56 border-4 border-white rounded-full shadow-lg hidden md:block"
                         />
                     </figure>
                     <div class="card-body text-white p-6">
@@ -275,17 +272,17 @@
                 loop: true, // Infinite Loop
                 autoplay: {
                     delay: 4500, // Auto-slide every 2.5 seconds
-                    disableOnInteraction: false, // Keeps autoplay on after user interaction
+                    disableOnInteraction: true, // Keeps autoplay on after user interaction
                 },
-                slidesPerView: 1.5, // Show part of next & previous slides
+                slidesPerView: 1, // Show part of next & previous slides
                 centeredSlides: false, // Centers active slide
-                spaceBetween: 20, // Spacing between slides
+                spaceBetween: 10, // Spacing between slides
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
                 breakpoints: {
-                    768: { slidesPerView: 2 }, // Show 2 slides on tablets
+                    768: { slidesPerView: 1 }, // Show 2 slides on tablets
                     1024: { slidesPerView: 2.5 }, // Show 2.5 slides on larger screens
                 },
             });
@@ -300,21 +297,6 @@
         document.getElementById("home-button").addEventListener("click", function () {
             document.getElementById("app-screen").style.transform = "translateY(100%)";
         });
-
-        function updateTime() {
-        const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        document.getElementById("time").textContent = timeString;
-        }
-        setInterval(updateTime, 60000); // Update every minute
-        updateTime();
-        function updateTime2() {
-        const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        document.getElementById("time2").textContent = timeString;
-        }
-        setInterval(updateTime, 60000); // Update every minute
-        updateTime2();
     </script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
