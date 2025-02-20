@@ -266,28 +266,6 @@
               
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".mySwiper", {
-                loop: true, // Infinite Loop
-                autoplay: {
-                    delay: 4500, // Auto-slide every 2.5 seconds
-                    disableOnInteraction: true, // Keeps autoplay on after user interaction
-                },
-                slidesPerView: 1, // Show part of next & previous slides
-                centeredSlides: false, // Centers active slide
-                spaceBetween: 10, // Spacing between slides
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    768: { slidesPerView: 1 }, // Show 2 slides on tablets
-                    1024: { slidesPerView: 2.5 }, // Show 2.5 slides on larger screens
-                },
-            });
-        });
-    </script>
 
     <script>
         document.getElementById("open-app").addEventListener("click", function () {
