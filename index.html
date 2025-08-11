@@ -6,156 +6,176 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Quinn Morrison — Full Stack Developer specializing in interactive web & mobile apps. View my projects, work experience, and journey in tech.">
     <title>Quinn Morrison</title>
 </head>
 <body>
-    <div class="card md:card-side bg-base-300 shadow-xl w-full h-96 pl-6">
-        <figure>
-            <img
-              src="/assets/headshot.jpeg"
-              alt="Quinn Morrison Headshot"
-              class="hidden md:block w-96 h-96 rounded-full "
-               />
-          </figure>
-        <div class="card-body flex justify-center items-center">
-            <h1 class="text-5xl text-white font-bold font-mono">Quinn Morrison</h1>
-            <h3 class="text-3xl text-white font-mono">Full Stack Mobile/Web/Audio Programming</h3>
-        </div>
+    <nav class="fixed top-0 w-full bg-base-200 shadow z-50">
+        <ul class="flex justify-center space-x-6 py-3">
+          <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+          <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+          <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+<section class="bg-base-300 py-16 px-6 flex flex-col md:flex-row items-center justify-center gap-10">
+    <img 
+      src="/assets/favicon.png" 
+      alt="Quinn Morrison Drawing" 
+      class="w-48 h-48 md:w-96 md:h-96 rounded-full shadow-lg"
+    />
+    <div class="text-center md:text-left max-w-xl">
+      <h1 class="text-5xl font-bold text-white font-mono">Quinn Morrison</h1>
+      <h2 class="text-2xl md:text-3xl text-white font-mono mt-2">Full Stack Developer | Junior Comp Sci Major</h2>
+      <p class="text-lg text-primary mt-4">
+        Full-stack developer building fast, scalable apps with web, mobile and cloud technologies.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline btn-secondary">Contact Me</a>
+      </div>
     </div>
+  </section>
+  
+  <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="bg-base-200 py-16 px-6">
+    <h2 class="text-4xl font-bold text-primary text-center mb-10">Skills & Technologies</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto text-center">
+      <!-- First Row -->
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mx-auto" alt="JavaScript" />
+        <p class="mt-2 text-white">JavaScript</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 mx-auto" alt="React" />
+        <p class="mt-2 text-white">React</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" class="w-12 h-12 mx-auto" alt="Flutter" />
+        <p class="mt-2 text-white">Flutter</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" class="w-12 h-12 mx-auto" alt="Swift" />
+        <p class="mt-2 text-white">Swift</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-12 h-12 mx-auto" alt="Node.js" />
+        <p class="mt-2 text-white">Node.js</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 mx-auto" alt="SQL" />
+        <p class="mt-2 text-white">SQL</p>
+      </div>
+  
+      <!-- Second Row -->
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-12 h-12 mx-auto" alt="TypeScript" />
+        <p class="mt-2 text-white">TypeScript</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/swiftui.png" class="w-12 h-12 mx-auto" alt="SwiftUI" />
+        <p class="mt-2 text-white">SwiftUI</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-12 h-12 mx-auto bg-white rounded" alt="Next.js" />
+        <p class="mt-2 text-white">Next.js</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-12 h-12 mx-auto" alt="MongoDB" />
+        <p class="mt-2 text-white">MongoDB</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" class="w-12 h-12 mx-auto" alt="Dart" />
+        <p class="mt-2 text-white">Dart</p>
+      </div>
+      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-12 h-12 mx-auto" alt="Google Cloud Platform" />
+        <p class="mt-2 text-white">GCP</p>
+      </div>
+    </div>
+  </section>
+  
+  
     <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 md:ml-8 sm:ml-0">About Me</h1>
+        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 md:ml-8 sm:ml-0">My Story</h1>
     </div>
 
-    
-    <div data-aos="fade-up" class="flex justify-center items-center mt-16">
-        <div class="iphone">         
-            <div class="screen" >
-                <div class="flex flex-col items-center mt-6">
-                    <img src="assets/accountPhoto.jpeg" alt="Profile Picture" class="w-24 h-24 rounded-full border-4 border-gray-300">
-                    <h1 class="font-bold text-gray-800 text-xl mt-2">Quinn Morrison</h1>
-                    <h3 class="font-bold text-gray-600 text-md">Student at TN Tech</h3>
-                    <p class="text-gray-600 text-sm text-center mt-3 px-4">
-                        Full Stack Mobile, Web, and Audio Developer
-                    </p>
-                    <p class="text-gray-600 text-sm text-center mt-2 px-4">
-                        Hobbies: Producing music, repairing instruments, and leading the Software Development Club
-                    </p>
-                    <span class="badge badge-info mt-2">Developer</span>
-                </div>
-    
-                <!-- Stats Section -->
-                <div class="flex justify-between bg-white shadow-md rounded-lg p-4 mt-5">
-                    <div class="text-center mr-4">
-                        <h3 class="text-xl font-semibold">6</h3>
-                        <p class="text-gray-500 text-sm">Projects</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold">2</h3>
-                        <p class="text-gray-500 text-sm">Years Experience</p>
-                    </div>
-                </div>
-    
-                <!-- Call to Action -->
-                <p class="text-center text-gray-700 mt-8 text-sm">(See My Experience Below!)</p>
-            </div>
-            <div class="home-button" id="home-button"></div>
-        </div>
-    </div> 
+    <div id="tree-container" style="width: 100%; height: 100vh; position: relative;">
+        <svg id="tree" style="width: 100%; height: 100%;"></svg>
+        <div id="detail-box"></div>
+    </div>
+
     <div data-aos="fade-up">
         <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Projects</h1>
     </div>
 
-    <div data-aos="fade-up" class="flex items-center mt-32 md:mx-32">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide sm:ml-16 md:ml-0">
-                    <div class="card pt-4 bg-accent w-96 ">
+    <div id="projects" data-aos="fade-up" class="flex flex-col items-center justify-center mt-32 md:mx-8 md:flex-row">
+                    <div class="card pt-4 mb-4 mx-0 bg-accent w-96 md:mb-0 md:mx-2">
                         <figure>
                             <img
-                            src="assets/qvcademy_logo.png"
-                            alt="qvcademy logo" 
-                            class="w-80 h-80"
+                            src="assets/SDC_Logo.png"
+                            alt="SDC Logo"
+                            class="w-80 h-80 rounded-full"
+                            loading="lazy"
                             />
                         </figure>
-                        <div class="card-body h-80">
-                            <h2 class="card-title text-white text-3xl">Qvcademy</h2>
-                            <p class="text-white">Lead full stack developer of Qvcademy, a web application designed to teach programmers how to code in new languages quickly. Using quick documentation and programming challenges, it's a great place to learn new languages.</p>
-                            <p class="text-white text-2xl">Technologies used: React, Monaco Editor, Nodejs, SQL</p>
+                        <div class="card-body h-96">
+                            <h2 class="card-title text-white text-3xl">Software Development Club</h2>
+                            <p class="text-white">Led the Software Development Club of Tn tech since August 2024. Organized full scale coding competitions, taught lectures in React and Flutter, and brought industry leaders in to talk about software development.</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card pt-4 bg-accent w-96">
+
+                    <div class="card pt-4 bg-accent w-96 mb-4 md:mb-0">
+                        <figure>
+                            <img
+                            src="assets/appIconLeetcode.png"
+                            alt="The DSA 75 logo"
+                            class="w-80 h-80"
+                            loading="lazy"
+                            />
+                        </figure>
+                        <div class="card-body h-96">
+                            <h2 class="card-title text-white text-3xl">The DSA 75</h2>
+                            <p class="text-white">Developed a mobile app to keep track of personal progress on the leetcode 75 challenge</p>
+                            <p class="text-white mt-8 text-2xl">Technologies used: Swift, SwiftUI</p>
+                        </div>
+                    </div>
+
+                    <div class="card pt-4 mx-0 bg-accent w-96 mb-4 md:mb-0 md:mx-2">
                         <figure>
                             <img
                             src="assets/YOURTOUR2.png"
                             alt="YourTour logo"
                             class="w-80 h-80"
+                            loading="lazy"
                             />
                         </figure>
-                        <div class="card-body h-80">
+                        <div class="card-body h-96">
                             <h2 class="card-title text-white text-3xl">YourTour</h2>
-                            <p class="text-white">Lead front end developer of YourTour, a mobile navigation app that turns any drive into a tour! YourTour takes the user's current location and generates facts and trivia about towns and cities as the drive progresses.</p>
-                            <p class="text-white mt-6 text-2xl">Technologies used: Flutter, OSM, OSRM</p>
+                            <p class="text-white">Principal front end developer of YourTour, a mobile navigation app that turns any drive into a tour! Co-Founder and Mobile App development lead.</p>
+                            <p class="text-white mt-6 text-2xl">Technologies used: Flutter, Mapbox, OSM, OSRM</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card pt-4 bg-accent w-96">
+
+                    <div class="card pt-4 bg-accent w-96 mb-4 md:mb-0">
                         <figure>
                             <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AEeKIiPVhWYPR6vVbEs1gRXxFMl5Q3w6pw&s"
-                            alt="YourTour logo"
+                            src="assets/qvcademy_logo.png"
+                            alt="qvcademy logo" 
                             class="w-80 h-80"
+                            loading="lazy"
                             />
                         </figure>
-                        <div class="card-body h-80">
-                            <h2 class="card-title text-white text-3xl">Varietees Company Website</h2>
-                            <p class="text-white">Set up client relationship between software Development Club and Varietees custom t-shirt shop. Helped manage team responsible for the end product.</p>
-                            <p class="text-white mt-8 text-2xl">Key Skills: Leadership, Communication with Client</p>
+                        <div class="card-body h-96">
+                            <h2 class="card-title text-white text-3xl">Qvcademy</h2>
+                            <p class="text-white">Lead full stack developer of Qvcademy, a web application designed to teach programmers how to code in new languages quickly.</p>
+                            <p class="text-white text-2xl">Technologies used: React, Monaco Editor, Nodejs, SQL, GCP</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card pt-4 bg-accent w-96">
-                        <figure>
-                            <img
-                            src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Tennessee_Technological_University_seal.svg/800px-Tennessee_Technological_University_seal.svg.png"
-                            alt="Tn Tech logo"
-                            class="w-80 h-80"
-                            />
-                        </figure>
-                        <div class="card-body h-80">
-                            <h2 class="card-title text-white text-3xl">Pj Link</h2>
-                            <p class="text-white">Created a simple app to reduce diagnostic time around campus on projectors by connecting to them through a python library and checking data.</p>
-                            <p class="text-white mt-16 text-2xl">Technologies used: Python, Pj Link</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card pt-4 bg-accent w-96">
-                        <figure>
-                            <img
-                            src="assets/SDC_Logo.png"
-                            alt="YourTour logo"
-                            class="w-80 h-80 rounded-full"
-                            />
-                        </figure>
-                        <div class="card-body h-80">
-                            <h2 class="card-title text-white text-3xl">Software Development Club</h2>
-                            <p class="text-white">Led the Software Development Club of Tn tech since August 2024. Organized full scale coding compeitions, taught lectures in React and Flutter, and brought industry leaders in to talk about software development.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
-        </div>
+
     </div>
     <div data-aos="fade-up">
             <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Work Experience</h1>
@@ -239,7 +259,7 @@
 
     
 
-    <div class="card bg-base-300 shadow-xl w-full h-96 mt-48">
+    <div id="contact" class="card bg-base-300 shadow-xl w-full h-96 mt-48">
         <div class="card-body flex justify-center items-center">
             <h1 class="text-3xl text-white font-bold font-mono">Contact me: sqjm1127@proton.me</h1>
             <div class="flex space-x-4 mt-8">
@@ -266,26 +286,170 @@
               
         </div>
     </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="tree.js"></script>  
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".mySwiper", {
-                loop: true, // Infinite Loop
-                autoplay: {
-                    delay: 4500, // Auto-slide every 2.5 seconds
-                    disableOnInteraction: true, // Keeps autoplay on after user interaction
+
+        const data = {
+            name: "Started @ Tn Tech Fall 2022",
+            details: "First time I had ever touched code! I strived to learn the fundamentals of programming.",
+            children: [
+                {
+                name: "Worked @ ITS Tn Tech",
+                details: "Learned about basic IT work, collaborated with peers on my first real world program!",
+                children: [
+                    { name: "Learned about Web Development", details: "As the need arose for websites in my personal life, I took up the challenge!",
+                        children: [
+                            {
+                                name: "SDC",
+                                details: "I saw a need for a space to meet with peers on campus, and decided to run the software development club.",
+                                children: []
+                            },
+                            {
+                                name: "QVCademy",
+                                details: "One of the software dev club's first projects, based around being a spark notes like aplication for learning new programming languages",
+                                children: []
+                            }
+                        ]
+                    },
+                ]
                 },
-                slidesPerView: 1, // Show part of next & previous slides
-                centeredSlides: false, // Centers active slide
-                spaceBetween: 10, // Spacing between slides
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    768: { slidesPerView: 1 }, // Show 2 slides on tablets
-                    1024: { slidesPerView: 2.5 }, // Show 2.5 slides on larger screens
-                },
-            });
+                {
+                name: "Learned Swift",
+                details: "I had an idea for a mobile app, and wanted to bring it to life.",
+                children: [
+                    { name: "Learned Flutter", details: "After learning I wanted to build mobile apps, a professor reccomended I learn flutter",
+                        children: [
+                            {
+                                name: "HackMT",
+                                details: "After working on a couple of flutter projects, I was invited to a hackathon in Feb 2025 to be the principal front end developer",
+                                children: [
+                                    {
+                                    name: "Eagleworks",
+                                    details: "My team and I took the hackathon idea to our school's annual business competition and raised $10,000 to start a start-up.",
+                                    children: 
+                                    [
+                                        {
+                                            name: "Co-Founder @ YourTour Navigation LLC",
+                                            description: "Co-Founded a start up based on AI navigation in Tennessee",
+                                        }
+                                    ]
+                                    },
+                                ]
+                            },
+                            {
+                                name: "Taught @ Coding Minds",
+                                details: "Just a couple months after learning about flutter, I landed my first job teaching it at Coding Minds!",
+                                children: [
+                                    {
+                                        name: "Taught at iD Tech",
+                                        description: "I found a passion for teaching and was brought on for a summer internship at iD Tech"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+                }
+            ]
+        };
+
+        const svg = d3.select("#tree"),
+            container = document.getElementById("tree-container"),
+            detailBox = document.getElementById("detail-box");
+
+        function drawTree() {
+        svg.selectAll("*").remove(); // clear before redraw
+
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        const g = svg.append("g").attr("transform", "translate(50,50)");
+
+        const root = d3.hierarchy(data);
+        const treeLayout = d3.tree().size([width - 100, height - 100]);
+        treeLayout(root);
+
+        // Links
+        g.selectAll(".link")
+            .data(root.links())
+            .enter()
+            .append("path")
+            .attr("class", "link")
+            .attr("d", d3.linkVertical()
+                        .x(d => d.x)
+                        .y(d => d.y))
+            .attr("stroke-opacity", 0)
+            .transition()
+            .duration(800)
+            .attr("stroke-opacity", 1);
+
+        // Nodes
+        const node = g.selectAll(".node")
+            .data(root.descendants())
+            .enter()
+            .append("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        node.append("circle")
+            .attr("r", 0)
+            .transition()
+            .duration(600)
+            .delay((d, i) => i * 100)
+            .attr("r", 20);
+
+        node.append("text")
+            .attr("dy", -30)
+            .attr("text-anchor", "middle")
+            .text(d => d.data.name)
+            .style("opacity", 0)
+            .transition()
+            .duration(500)
+            .delay((d, i) => i * 100)
+            .style("opacity", 1);
+
+        // Click handler
+        node.on("click", (event, d) => {
+            event.stopPropagation();                // prevent body click from immediately hiding it
+            detailBox.innerHTML = `<strong>${d.data.name}</strong><br>${d.data.details || ""}`;
+            detailBox.style.display = "block";
+
+            const containerRect = container.getBoundingClientRect();
+            const boxRect = detailBox.getBoundingClientRect();
+
+            // clientX/Y are viewport coords; convert to coordinates inside the container:
+            let left = event.clientX - containerRect.left + 15;
+            let top  = event.clientY - containerRect.top - 20;
+
+            // clamp so it doesn't overflow the container edges
+            const padding = 8;
+            if (left + boxRect.width + padding > containerRect.width) {
+                left = containerRect.width - boxRect.width - padding;
+            }
+            if (top + boxRect.height + padding > containerRect.height) {
+                top = containerRect.height - boxRect.height - padding;
+            }
+            if (left < padding) left = padding;
+            if (top < padding) top = padding;
+
+            detailBox.style.left = `${left}px`;
+            detailBox.style.top  = `${top}px`;
+        });
+
+        }
+
+        // Draw initial tree
+        drawTree();
+
+        // Redraw on resize
+        window.addEventListener("resize", drawTree);
+
+        // Hide detail box when clicking anywhere else
+        document.body.addEventListener("click", (e) => {
+            if (!e.target.closest(".node") && !e.target.closest("#detail-box")) {
+                detailBox.style.display = "none";
+            }
         });
     </script>
     
