@@ -1,461 +1,433 @@
 <!DOCTYPE html>
-<html data-theme="nord" lang="en">
+<html data-theme="dracula" lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quinn Morrison — Full Stack Developer & Startup Founder specializing in interactive web, mobile apps, and hardware integration.">
+    <title>Quinn Morrison | Software Engineer</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Quinn Morrison — Full Stack Developer specializing in interactive web & mobile apps. View my projects, work experience, and journey in tech.">
-    <title>Quinn Morrison</title>
 </head>
-<body>
-    <nav class="fixed top-0 w-full bg-base-200 shadow z-50">
-        <ul class="flex justify-center space-x-6 py-3">
-          <li><a href="#skills" class="hover:text-primary">Skills</a></li>
-          <li><a href="#projects" class="hover:text-primary">Projects</a></li>
-          <li><a href="#contact" class="hover:text-primary">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Hero Section -->
-<section class="bg-base-300 py-16 px-6 flex flex-col md:flex-row items-center justify-center gap-10">
-    <img 
-      src="/assets/favicon.png" 
-      alt="Quinn Morrison Drawing" 
-      class="w-48 h-48 md:w-96 md:h-96 rounded-full shadow-lg"
-    />
-    <div class="text-center md:text-left max-w-xl">
-      <h1 class="text-5xl font-bold text-white font-mono">Quinn Morrison</h1>
-      <h2 class="text-2xl md:text-3xl text-white font-mono mt-2">Full Stack Developer | Junior Comp Sci Major</h2>
-      <p class="text-lg text-primary mt-4">
-        Full-stack developer building fast, scalable apps with web, mobile and cloud technologies.
-      </p>
-      <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline btn-secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Skills Section -->
-<!-- Skills Section -->
-<section id="skills" class="bg-base-200 py-16 px-6">
-    <h2 class="text-4xl font-bold text-primary text-center mb-10">Skills & Technologies</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto text-center">
-      <!-- First Row -->
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mx-auto" alt="JavaScript" />
-        <p class="mt-2 text-white">JavaScript</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 mx-auto" alt="React" />
-        <p class="mt-2 text-white">React</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" class="w-12 h-12 mx-auto" alt="Flutter" />
-        <p class="mt-2 text-white">Flutter</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" class="w-12 h-12 mx-auto" alt="Swift" />
-        <p class="mt-2 text-white">Swift</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-12 h-12 mx-auto" alt="Node.js" />
-        <p class="mt-2 text-white">Node.js</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 mx-auto" alt="SQL" />
-        <p class="mt-2 text-white">SQL</p>
-      </div>
-  
-      <!-- Second Row -->
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-12 h-12 mx-auto" alt="TypeScript" />
-        <p class="mt-2 text-white">TypeScript</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/swiftui.png" class="w-12 h-12 mx-auto" alt="SwiftUI" />
-        <p class="mt-2 text-white">SwiftUI</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-12 h-12 mx-auto bg-white rounded" alt="Next.js" />
-        <p class="mt-2 text-white">Next.js</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-12 h-12 mx-auto" alt="MongoDB" />
-        <p class="mt-2 text-white">MongoDB</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" class="w-12 h-12 mx-auto" alt="Dart" />
-        <p class="mt-2 text-white">Dart</p>
-      </div>
-      <div class="p-4 bg-base-300 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-12 h-12 mx-auto" alt="Google Cloud Platform" />
-        <p class="mt-2 text-white">GCP</p>
-      </div>
-    </div>
-  </section>
-  
-  
-    <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-16 md:ml-8 sm:ml-0">My Story</h1>
-    </div>
-
-    <div id="tree-container" style="width: 100%; height: 100vh; position: relative;">
-        <svg id="tree" style="width: 100%; height: 100%;"></svg>
-        <div id="detail-box"></div>
-    </div>
-
-    <div data-aos="fade-up">
-        <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Projects</h1>
-    </div>
-
-    <div id="projects" data-aos="fade-up" class="flex flex-col items-center justify-center mt-32 md:mx-8 md:flex-row">
-                    <div class="card pt-4 mb-4 mx-0 bg-accent w-96 md:mb-0 md:mx-2">
-                        <figure>
-                            <img
-                            src="assets/SDC_Logo.png"
-                            alt="SDC Logo"
-                            class="w-80 h-80 rounded-full"
-                            loading="lazy"
-                            />
-                        </figure>
-                        <div class="card-body h-96">
-                            <h2 class="card-title text-white text-3xl">Software Development Club</h2>
-                            <p class="text-white">Led the Software Development Club of Tn tech since August 2024. Organized full scale coding competitions, taught lectures in React and Flutter, and brought industry leaders in to talk about software development.</p>
-                        </div>
-                    </div>
-
-                    <div class="card pt-4 bg-accent w-96 mb-4 md:mb-0">
-                        <figure>
-                            <img
-                            src="assets/appIconLeetcode.png"
-                            alt="The DSA 75 logo"
-                            class="w-80 h-80"
-                            loading="lazy"
-                            />
-                        </figure>
-                        <div class="card-body h-96">
-                            <h2 class="card-title text-white text-3xl">The DSA 75</h2>
-                            <p class="text-white">Developed a mobile app to keep track of personal progress on the leetcode 75 challenge</p>
-                            <p class="text-white mt-8 text-2xl">Technologies used: Swift, SwiftUI</p>
-                        </div>
-                    </div>
-
-                    <div class="card pt-4 mx-0 bg-accent w-96 mb-4 md:mb-0 md:mx-2">
-                        <figure>
-                            <img
-                            src="assets/YOURTOUR2.png"
-                            alt="YourTour logo"
-                            class="w-80 h-80"
-                            loading="lazy"
-                            />
-                        </figure>
-                        <div class="card-body h-96">
-                            <h2 class="card-title text-white text-3xl">YourTour</h2>
-                            <p class="text-white">Principal front end developer of YourTour, a mobile navigation app that turns any drive into a tour! Co-Founder and Mobile App development lead.</p>
-                            <p class="text-white mt-6 text-2xl">Technologies used: Flutter, Mapbox, OSM, OSRM</p>
-                        </div>
-                    </div>
-
-                    <div class="card pt-4 bg-accent w-96 mb-4 md:mb-0">
-                        <figure>
-                            <img
-                            src="assets/qvcademy_logo.png"
-                            alt="qvcademy logo" 
-                            class="w-80 h-80"
-                            loading="lazy"
-                            />
-                        </figure>
-                        <div class="card-body h-96">
-                            <h2 class="card-title text-white text-3xl">Qvcademy</h2>
-                            <p class="text-white">Lead full stack developer of Qvcademy, a web application designed to teach programmers how to code in new languages quickly.</p>
-                            <p class="text-white text-2xl">Technologies used: React, Monaco Editor, Nodejs, SQL, GCP</p>
-                        </div>
-                    </div>
-
-    </div>
-    <div data-aos="fade-up">
-            <h1 class="flex justify-center items-center text-7xl text-primary font-bold mt-32 mb-32 md:ml-8 sm:ml-0">Work Experience</h1>
-    </div>     
-            <!-- iCube Job -->
-            <div data-aos="fade-right" class="flex">
-                <div class="card card-side mt-8 ml-16 bg-gradient-to-r from-indigo-500 to-purple-500 shadow-xl rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
-                    <figure>
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Dwsq_3wspqVU3NmpjYiU7qgSD3eKZaPmNw&s"
-                            alt="iCube logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
-                        />
-                    </figure>
-                    <div class="card-body text-white p-6">
-                        <div class="card-title font-semibold text-2xl">Software Developer at Tn Tech's iCube</div>
-                        <p class="text-sm mt-2">December 2024 - Current</p>
-                        <p class="text-lg mt-2">Front End stack: Nextjs, TailwindCss, Daisy UI</p>
-                        <p class="text-lg mt-2">Back End stack: Nextjs, Mongodb</p>
-                    </div>
-                </div>
-            </div>
+<body class="bg-base-100 text-base-content font-sans antialiased selection:bg-primary selection:text-primary-content">
     
-            <!-- iDTech Job -->
-            <div data-aos="fade-left" class="flex justify-end">
-                <div class="card card-side mt-8 mr-16 bg-gradient-to-r from-green-400 to-teal-500 shadow-xl rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
-                    <figure>
-                        <img
-                            src="https://yt3.googleusercontent.com/z375Pnu7UagCRzZw94OJte2--hvWWRWZjvTIo5j-NcyuE-bYesxvfdhoQgKE44OPSdFtJFXNfQ=s900-c-k-c0x00ffffff-no-rj"
-                            alt="idTech logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
-                        />
-                    </figure>
-                    <div class="card-body text-white p-6">
-                        <div class="card-title font-semibold text-2xl">Instructor at iDTech Camps</div>
-                        <p class="text-sm mt-2">May 2024 - August 2024</p>
-                        <p class="text-lg mt-2">Taught: Python, C++, Ableton Live, Chess</p>
-                        <p class="text-lg mt-2">Instructed individual students and groups up to 5</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- CodingMinds Job -->
-            <div data-aos="fade-right" class="flex justify-start">
-                <div class="card card-side mt-8 ml-16 bg-gradient-to-r from-blue-500 to-cyan-500 shadow-lg rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
-                    <figure>
-                        <img
-                            src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88bf3aa4a5ae34f242116424cc7b47d9"
-                            alt="Coding Minds logo"
-                            class="rounded-full h-56 w-56 border-4 border-white shadow-lg hidden md:block"
-                        />
-                    </figure>
-                    <div class="card-body text-white p-6">
-                        <div class="card-title font-semibold text-2xl">Instructor at CodingMinds Academy</div>
-                        <p class="text-sm mt-2">March 2024 - February 2025</p>
-                        <p class="text-lg mt-2">Taught: Flutter, Python, C++</p>
-                        <p class="text-lg mt-2">Built bootstrap projects in Flutterflow, Roblox</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- CEROC Job -->
-            <div data-aos="fade-left" class="flex justify-end">
-                <div class="card card-side mt-8 mr-16 bg-gradient-to-r from-red-500 to-pink-500 shadow-lg rounded-2xl overflow-hidden w-1/2 transform transition duration-500 hover:scale-105">
-                    <figure>
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlE4punrUCAFR1xwnLK62l4HnUyv8UmlxqQ&s"
-                            alt="CEROC logo"
-                            class="h-56 w-56 border-4 border-white rounded-full shadow-lg hidden md:block"
-                        />
-                    </figure>
-                    <div class="card-body text-white p-6">
-                        <div class="card-title font-semibold text-2xl">Curriculum Designer with CEROC at Tn Tech</div>
-                        <p class="text-sm mt-2">May 2024 - July 2024</p>
-                        <p class="text-lg mt-2">Designed a cryptography challenge for Middle and High School levels</p>
-                        <p class="text-lg mt-2">Built a website in Flutter to facilitate this challenge</p>
-                    </div>
-                </div>
-            </div>
-    
-
-    
-
-    <div id="contact" class="card bg-base-300 shadow-xl w-full h-96 mt-48">
-        <div class="card-body flex justify-center items-center">
-            <h1 class="text-3xl text-white font-bold font-mono">Contact me: sqjm1127@proton.me</h1>
-            <div class="flex space-x-4 mt-8">
-                <!-- GitHub Button with Label -->
-                <a href="https://github.com/sqmorrison" target="_blank" class="text-gray-800 hover:text-gray-600 flex items-center space-x-2">
-                  <button class="p-2 rounded-full bg-primary hover:text-primary hover:bg-primary-content transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.91 8.16 6.88 9.47.5.09.68-.22.68-.47v-1.72c-2.72.59-3.3-1.3-3.3-1.3-.45-1.14-1.1-1.45-1.1-1.45-.9-.61.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.89 1.53 2.33 1.09 2.89.83.09-.64.35-1.09.64-1.35-2.22-.25-4.54-1.11-4.54-4.93 0-1.09.39-2 1.03-2.7-.1-.26-.44-1.33.1-2.77 0 0 .85-.27 2.8 1.03 1.1-.31 2.28-.31 3.38 0 1.95-1.3 2.8-1.03 2.8-1.03.54 1.44.2 2.51.1 2.77.64.7 1.03 1.61 1.03 2.7 0 3.83-2.32 4.68-4.54 4.93.35.3.64.88.64 1.68v2.51c0 .25.18.56.68.47 3.97-1.31 6.88-5.05 6.88-9.47 0-5.52-4.48-10-10-10z"/>
-                    </svg>
-                  </button>
-                  <span class="text-gray-800">GitHub</span>
-                </a>
-              
-                <!-- LinkedIn Button with Label -->
-                <a href="https://www.linkedin.com/in/sqmorrison" target="_blank" class="text-blue-700 hover:text-blue-500 flex items-center space-x-2">
-                  <button class="p-2 rounded-full bg-secondary hover:text-secondary hover:bg-secondary-content transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                      <path d="M4 3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2s-.9-2-2-2H6c-1.1 0-2 .9-2 2zm2 18c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H6z"/>
-                    </svg>
-                  </button>
-                  <span class="text-blue-700">LinkedIn</span>
-                </a>
-              </div>
-              
+    <nav class="fixed top-0 w-full bg-base-100/80 backdrop-blur-md border-b border-base-300 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold font-mono tracking-tighter hover:text-primary transition-colors">QM_</a>
+            <ul class="flex space-x-8 font-mono text-sm">
+                <li><a href="#skills" class="hover:text-primary transition-colors">~/skills</a></li>
+                <li><a href="#projects" class="hover:text-primary transition-colors">~/projects</a></li>
+                <li><a href="#experience" class="hover:text-primary transition-colors">~/experience</a></li>
+                <li><a href="#contact" class="text-primary hover:text-primary-focus transition-colors">./contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h1 class="text-5xl md:text-7xl font-bold font-mono tracking-tight mb-4">Quinn Morrison</h1>
+                <h2 class="text-2xl text-primary font-mono mb-6">> Full Stack Software Engineer</h2>
+                <p class="text-lg text-base-content/80 mb-8 max-w-lg leading-relaxed">
+                    Bridging software, hardware, and network security. I build fast, scalable systems using modern web and mobile technologies, with a strong focus on AI integration and robust architectures.
+                </p>
+                <div class="flex gap-4 font-mono">
+                    <a href="#projects" class="btn btn-primary rounded-none">View Projects</a>
+                    <a href="https://github.com/sqmorrison" target="_blank" class="btn btn-outline btn-neutral rounded-none">GitHub -></a>
+                </div>
+            </div>
+            
+            <div class="mockup-code bg-base-300 border border-base-200 shadow-2xl" data-aos="fade-left">
+                <pre data-prefix="$" class="text-success"><code>whoami</code></pre>
+                <pre data-prefix=">" class="text-warning"><code>Quinn Morrison</code></pre>
+                <pre data-prefix="$" class="text-success"><code>cat current_status.txt</code></pre>
+                <pre data-prefix=">" class="text-info"><code>Building Eagle Aware (Flutter + ESP-IDF)</code></pre>
+                <pre data-prefix=">" class="text-info"><code>Full Stack Dev @ iCube (Next.js + MongoDB)</code></pre>
+                <pre data-prefix=">" class="text-info"><code>CS Major @ TN Tech (Grad: 12/2026)</code></pre>
+                <pre data-prefix="$" class="animate-pulse"><code>_</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-base-200/50 border-y border-base-300 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold font-mono mb-12 text-center" data-aos="fade-up">./skills_and_stack</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card bg-base-100 border border-base-300 rounded-none" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary font-mono mb-4">Frontend & Mobile</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-neutral badge-lg rounded-none">React</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">Next.js</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">Flutter</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">SwiftUI</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border border-base-300 rounded-none" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary font-mono mb-4">Backend & Systems</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-neutral badge-lg rounded-none">Node.js</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">C/C++</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">Go</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">PostgreSQL</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border border-base-300 rounded-none" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body">
+                        <h3 class="card-title text-accent font-mono mb-4">Infra & Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-neutral badge-lg rounded-none">Docker</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">AWS / GCP</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">CI/CD</span>
+                            <span class="badge badge-neutral badge-lg rounded-none">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 border-b border-base-300">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold font-mono mb-12 text-center" data-aos="fade-up">./my_story.sh</h2>
+            <div id="tree-container" class="w-full h-[600px] relative bg-base-200/30 border border-base-300 overflow-hidden" data-aos="zoom-in">
+                <svg id="tree" class="w-full h-full"></svg>
+                <div id="detail-box" class="hidden absolute bg-neutral text-neutral-content p-4 border border-primary text-sm shadow-xl max-w-xs z-10 pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-base-200/50 border-b border-base-300 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold font-mono mb-12 text-center" data-aos="fade-up">./projects</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="card bg-base-100 border border-base-300 rounded-none group hover:border-primary transition-colors" data-aos="fade-up">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl font-bold">Eagle Aware</h3>
+                        <p class="text-base-content/70 mt-2">Hardware & software solution predicting potential stalking threats. Integrated custom hardware with a cross-platform mobile frontend.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-primary">
+                            <span>Flutter</span> • <span>ESP-IDF</span> • <span>SQLite3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 border border-base-300 rounded-none group hover:border-primary transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl font-bold">Aerial Eye</h3>
+                        <p class="text-base-content/70 mt-2">Open-source IDS monitoring network threats. Integrated a Mistral AI client to explain critical packet data and threats in plain English to users.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-primary">
+                            <span>Docker</span> • <span>Suricata</span> • <span>Next.js</span> • <span>Mistral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 border border-base-300 rounded-none group hover:border-primary transition-colors" data-aos="fade-up">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl font-bold">YourTour Navigation</h3>
+                        <p class="text-base-content/70 mt-2">AI-powered mobile navigation app generating dynamic stops. Scaled TestFlight infrastructure for 100+ beta testers and secured seed funding.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-primary">
+                            <span>Flutter</span> • <span>Mapbox</span> • <span>OSRM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 border border-base-300 rounded-none group hover:border-primary transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl font-bold">Qvcademy</h3>
+                        <p class="text-base-content/70 mt-2">Web application accelerating language learning for programmers via integrated code editors and algorithmic exercises.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-primary">
+                            <span>React</span> • <span>Node.js</span> • <span>SQLite</span> • <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold font-mono mb-16 text-center" data-aos="fade-up">./work_history</h2>
+                
+                <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    
+                    <li>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10" data-aos="fade-right">
+                            <time class="font-mono italic text-sm text-base-content/60">12/2025 - Present</time>
+                            <div class="text-xl font-black mt-1">Junior Threat Analyst</div>
+                            <div class="text-primary font-mono text-sm mb-2">Student SOC at Tennessee Tech</div>
+                            <p class="text-base-content/80 text-sm">Integrating my open source IDS Dashboard to help coworkers monitor threats on the school network. Performing research on current threat actors to educate others on threat mitigation strategies, and writing monthly newsletters.</p>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+    
+                    <li>
+                        <hr class="bg-primary"/>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-end mb-10" data-aos="fade-left">
+                            <time class="font-mono italic text-sm text-base-content/60">12/2024 - 02/2026</time>
+                            <div class="text-xl font-black mt-1">Full Stack Software Engineer</div>
+                            <div class="text-primary font-mono text-sm mb-2">iCube at Tennessee Tech</div>
+                            <p class="text-base-content/80 text-sm">Designed schemas and fleshed out CRUD operations on the MongoDB database with Next.js. Built secure registration + onboarding APIs for project's first users and developed UI components based on user stories using Tailwind CSS.</p>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+    
+                    <li>
+                        <hr class="bg-primary"/>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10" data-aos="fade-right">
+                            <time class="font-mono italic text-sm text-base-content/60">02/2025 - 08/2025</time>
+                            <div class="text-xl font-black mt-1">Co-Founder</div>
+                            <div class="text-primary font-mono text-sm mb-2">Your Tour Navigation LLC</div>
+                            <p class="text-base-content/80 text-sm">Led development and deployment of Flutter app to beta testers, with scalable TestFlight infrastructure for 100+ users. Co-founded and led the front end team on a mobile startup offering AI-powered tours, raising $11,250 in seed funding.</p>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+    
+                    <li>
+                        <hr class="bg-primary"/>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-end mb-10" data-aos="fade-left">
+                            <time class="font-mono italic text-sm text-base-content/60">03/2024 - 02/2025</time>
+                            <div class="text-xl font-black mt-1">Instructor</div>
+                            <div class="text-primary font-mono text-sm mb-2">Coding Minds Academy</div>
+                            <p class="text-base-content/80 text-sm">Instructed semester-long courses in Python, C++, and Flutter for students aged 10-15. Obtained a score of 4.73/5.0 when evaluated on instructor performance.</p>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+    
+                    <li>
+                        <hr class="bg-primary"/>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10" data-aos="fade-right">
+                            <time class="font-mono italic text-sm text-base-content/60">05/2024 - 08/2024</time>
+                            <div class="text-xl font-black mt-1">Instructor</div>
+                            <div class="text-primary font-mono text-sm mb-2">iD Tech</div>
+                            <p class="text-base-content/80 text-sm">Taught courses in C++, Javascript, digital music, chess theory, and Python, and courses related to cyber security principals. Created pedagogical material and projects for each course.</p>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+    
+                    <li>
+                        <hr class="bg-primary"/>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-base-300"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <div class="timeline-end mb-10" data-aos="fade-left">
+                            <time class="font-mono italic text-sm text-base-content/60">01/2023 - 05/2023</time>
+                            <div class="text-xl font-black mt-1">IT Intern</div>
+                            <div class="text-primary font-mono text-sm mb-2">Tennessee Technological University</div>
+                            <p class="text-base-content/80 text-sm">Performed large scale hardware installations including university wide digital signage, desktop deployments. Prepared surplus technology equipment including computer components for resale by ensuring proprietary information was securely erased.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <footer id="contact" class="footer items-center p-10 bg-base-300 text-neutral-content border-t border-base-200">
+        <aside class="items-center grid-flow-col">
+            <span class="font-mono text-xl font-bold">QM_</span> 
+            <p>Ready to build. <br/> <a href="mailto:sqjm1127@proton.me" class="text-primary hover:underline">sqjm1127@proton.me</a></p>
+        </aside> 
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a href="https://github.com/sqmorrison" target="_blank" class="hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sqmorrison" target="_blank" class="hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+        </nav>
+    </footer>
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="tree.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-
+        AOS.init({ once: true, offset: 50 });
+        
+        // Ensure you move the D3 inline script here or keep it inside tree.js
+        // If keeping it inline, paste your previous D3 tree logic right here.
         const data = {
-            name: "Started @ Tn Tech Fall 2022",
-            details: "First time I had ever touched code! I strived to learn the fundamentals of programming.",
-            children: [
-                {
-                name: "Worked @ ITS Tn Tech",
-                details: "Learned about basic IT work, collaborated with peers on my first real world program!",
-                children: [
-                    { name: "Learned about Web Development", details: "As the need arose for websites in my personal life, I took up the challenge!",
+                    name: "Started @ Tn Tech Fall 2022",
+                    details: "First time I had ever touched code! I strived to learn the fundamentals of programming.",
+                    children: [
+                        {
+                        name: "Worked @ ITS Tn Tech",
+                        details: "Learned about basic IT work, collaborated with peers on my first real world program!",
                         children: [
-                            {
-                                name: "SDC",
-                                details: "I saw a need for a space to meet with peers on campus, and decided to run the software development club.",
-                                children: []
-                            },
-                            {
-                                name: "QVCademy",
-                                details: "One of the software dev club's first projects, based around being a spark notes like aplication for learning new programming languages",
-                                children: []
-                            }
-                        ]
-                    },
-                ]
-                },
-                {
-                name: "Learned Swift",
-                details: "I had an idea for a mobile app, and wanted to bring it to life.",
-                children: [
-                    { name: "Learned Flutter", details: "After learning I wanted to build mobile apps, a professor reccomended I learn flutter",
-                        children: [
-                            {
-                                name: "HackMT",
-                                details: "After working on a couple of flutter projects, I was invited to a hackathon in Feb 2025 to be the principal front end developer",
+                            { name: "Learned about Web Development", details: "As the need arose for websites in my personal life, I took up the challenge!",
                                 children: [
                                     {
-                                    name: "Eagleworks",
-                                    details: "My team and I took the hackathon idea to our school's annual business competition and raised $10,000 to start a start-up.",
-                                    children: 
-                                    [
-                                        {
-                                            name: "Co-Founder @ YourTour Navigation LLC",
-                                            description: "Co-Founded a start up based on AI navigation in Tennessee",
-                                        }
-                                    ]
+                                        name: "SDC",
+                                        details: "I saw a need for a space to meet with peers on campus, and decided to run the software development club.",
+                                        children: []
                                     },
+                                    {
+                                        name: "QVCademy",
+                                        details: "One of the software dev club's first projects, based around being a spark notes like aplication for learning new programming languages",
+                                        children: []
+                                    }
                                 ]
                             },
-                            {
-                                name: "Taught @ Coding Minds",
-                                details: "Just a couple months after learning about flutter, I landed my first job teaching it at Coding Minds!",
+                        ]
+                        },
+                        {
+                        name: "Learned Swift",
+                        details: "I had an idea for a mobile app, and wanted to bring it to life.",
+                        children: [
+                            { name: "Learned Flutter", details: "After learning I wanted to build mobile apps, a professor reccomended I learn flutter",
                                 children: [
                                     {
-                                        name: "Taught at iD Tech",
-                                        description: "I found a passion for teaching and was brought on for a summer internship at iD Tech"
+                                        name: "HackMT",
+                                        details: "After working on a couple of flutter projects, I was invited to a hackathon in Feb 2025 to be the principal front end developer",
+                                        children: [
+                                            {
+                                            name: "Eagleworks",
+                                            details: "My team and I took the hackathon idea to our school's annual business competition and raised $10,000 to start a start-up.",
+                                            children: 
+                                            [
+                                                {
+                                                    name: "Co-Founder @ YourTour Navigation LLC",
+                                                    description: "Co-Founded a start up based on AI navigation in Tennessee",
+                                                }
+                                            ]
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        name: "Taught @ Coding Minds",
+                                        details: "Just a couple months after learning about flutter, I landed my first job teaching it at Coding Minds!",
+                                        children: [
+                                            {
+                                                name: "Taught at iD Tech",
+                                                description: "I found a passion for teaching and was brought on for a summer internship at iD Tech"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
                         ]
+                        }
+                    ]
+                };
+        
+                const svg = d3.select("#tree"),
+                    container = document.getElementById("tree-container"),
+                    detailBox = document.getElementById("detail-box");
+        
+                function drawTree() {
+                svg.selectAll("*").remove(); // clear before redraw
+        
+                const width = container.clientWidth;
+                const height = container.clientHeight;
+        
+                const g = svg.append("g").attr("transform", "translate(50,50)");
+        
+                const root = d3.hierarchy(data);
+                const treeLayout = d3.tree().size([width - 100, height - 100]);
+                treeLayout(root);
+        
+                // Links
+                g.selectAll(".link")
+                    .data(root.links())
+                    .enter()
+                    .append("path")
+                    .attr("class", "link")
+                    .attr("d", d3.linkVertical()
+                                .x(d => d.x)
+                                .y(d => d.y))
+                    .attr("stroke-opacity", 0)
+                    .transition()
+                    .duration(800)
+                    .attr("stroke-opacity", 1);
+        
+                // Nodes
+                const node = g.selectAll(".node")
+                    .data(root.descendants())
+                    .enter()
+                    .append("g")
+                    .attr("class", "node")
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+        
+                node.append("circle")
+                    .attr("r", 0)
+                    .transition()
+                    .duration(600)
+                    .delay((d, i) => i * 100)
+                    .attr("r", 20);
+        
+                node.append("text")
+                    .attr("dy", -30)
+                    .attr("text-anchor", "middle")
+                    .text(d => d.data.name)
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(500)
+                    .delay((d, i) => i * 100)
+                    .style("opacity", 1);
+        
+                // Click handler
+                node.on("click", (event, d) => {
+                    event.stopPropagation();                // prevent body click from immediately hiding it
+                    detailBox.innerHTML = `<strong>${d.data.name}</strong><br>${d.data.details || ""}`;
+                    detailBox.style.display = "block";
+        
+                    const containerRect = container.getBoundingClientRect();
+                    const boxRect = detailBox.getBoundingClientRect();
+        
+                    // clientX/Y are viewport coords; convert to coordinates inside the container:
+                    let left = event.clientX - containerRect.left + 15;
+                    let top  = event.clientY - containerRect.top - 20;
+        
+                    // clamp so it doesn't overflow the container edges
+                    const padding = 8;
+                    if (left + boxRect.width + padding > containerRect.width) {
+                        left = containerRect.width - boxRect.width - padding;
                     }
-                ]
+                    if (top + boxRect.height + padding > containerRect.height) {
+                        top = containerRect.height - boxRect.height - padding;
+                    }
+                    if (left < padding) left = padding;
+                    if (top < padding) top = padding;
+        
+                    detailBox.style.left = `${left}px`;
+                    detailBox.style.top  = `${top}px`;
+                });
+        
                 }
-            ]
-        };
-
-        const svg = d3.select("#tree"),
-            container = document.getElementById("tree-container"),
-            detailBox = document.getElementById("detail-box");
-
-        function drawTree() {
-        svg.selectAll("*").remove(); // clear before redraw
-
-        const width = container.clientWidth;
-        const height = container.clientHeight;
-
-        const g = svg.append("g").attr("transform", "translate(50,50)");
-
-        const root = d3.hierarchy(data);
-        const treeLayout = d3.tree().size([width - 100, height - 100]);
-        treeLayout(root);
-
-        // Links
-        g.selectAll(".link")
-            .data(root.links())
-            .enter()
-            .append("path")
-            .attr("class", "link")
-            .attr("d", d3.linkVertical()
-                        .x(d => d.x)
-                        .y(d => d.y))
-            .attr("stroke-opacity", 0)
-            .transition()
-            .duration(800)
-            .attr("stroke-opacity", 1);
-
-        // Nodes
-        const node = g.selectAll(".node")
-            .data(root.descendants())
-            .enter()
-            .append("g")
-            .attr("class", "node")
-            .attr("transform", d => `translate(${d.x},${d.y})`);
-
-        node.append("circle")
-            .attr("r", 0)
-            .transition()
-            .duration(600)
-            .delay((d, i) => i * 100)
-            .attr("r", 20);
-
-        node.append("text")
-            .attr("dy", -30)
-            .attr("text-anchor", "middle")
-            .text(d => d.data.name)
-            .style("opacity", 0)
-            .transition()
-            .duration(500)
-            .delay((d, i) => i * 100)
-            .style("opacity", 1);
-
-        // Click handler
-        node.on("click", (event, d) => {
-            event.stopPropagation();                // prevent body click from immediately hiding it
-            detailBox.innerHTML = `<strong>${d.data.name}</strong><br>${d.data.details || ""}`;
-            detailBox.style.display = "block";
-
-            const containerRect = container.getBoundingClientRect();
-            const boxRect = detailBox.getBoundingClientRect();
-
-            // clientX/Y are viewport coords; convert to coordinates inside the container:
-            let left = event.clientX - containerRect.left + 15;
-            let top  = event.clientY - containerRect.top - 20;
-
-            // clamp so it doesn't overflow the container edges
-            const padding = 8;
-            if (left + boxRect.width + padding > containerRect.width) {
-                left = containerRect.width - boxRect.width - padding;
-            }
-            if (top + boxRect.height + padding > containerRect.height) {
-                top = containerRect.height - boxRect.height - padding;
-            }
-            if (left < padding) left = padding;
-            if (top < padding) top = padding;
-
-            detailBox.style.left = `${left}px`;
-            detailBox.style.top  = `${top}px`;
-        });
-
-        }
-
-        // Draw initial tree
-        drawTree();
-
-        // Redraw on resize
-        window.addEventListener("resize", drawTree);
-
-        // Hide detail box when clicking anywhere else
-        document.body.addEventListener("click", (e) => {
-            if (!e.target.closest(".node") && !e.target.closest("#detail-box")) {
-                detailBox.style.display = "none";
-            }
-        });
-    </script>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+        
+                // Draw initial tree
+                drawTree();
+        
+                // Redraw on resize
+                window.addEventListener("resize", drawTree);
+        
+                // Hide detail box when clicking anywhere else
+                document.body.addEventListener("click", (e) => {
+                    if (!e.target.closest(".node") && !e.target.closest("#detail-box")) {
+                        detailBox.style.display = "none";
+                    }
+                });
     </script>
 </body>
 </html>

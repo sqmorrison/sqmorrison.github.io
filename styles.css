@@ -12,7 +12,7 @@ html, body {
     fill: #4a5568;
   }
   .node text {
-    fill: #333;
+    fill: #FFFF;
     font-size: 14px;
     pointer-events: none;
   }
