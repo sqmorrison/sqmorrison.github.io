@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doable at iCube — inherited an 18-month engagement, killed the PWA, shipped a mobile app to TestFlight in eight days.">
+    <title>Doable — Quinn Morrison</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap site-header__inner">
+            <a class="wordmark" href="../index.html">Quinn Morrison</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" data-nav>
+                <ul>
+                    <li><a href="../index.html#work">Work</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <header class="article-hero">
+            <div class="wrap-narrow">
+                <p class="article-hero__kicker">Selected work · 02</p>
+                <h1>Doable</h1>
+                <p class="article-hero__dek">A client had already been to other vendors. After a year and a half inside iCube they still did not have what their people needed. I walked in as manager, read the code, and shipped a mobile app in eight days.</p>
+                <p class="article-meta">
+                    <span>Student Engineering Manager · iCube</span>
+                    <span>TestFlight in 8 days</span>
+                    <span>Google Play live · App Store in progress</span>
+                </p>
+            </div>
+        </header>
+
+        <figure class="article-figure wrap">
+            <div class="work-figure work-figure--rust" aria-hidden="true">
+                <span class="work-figure__code">iCube · Tennessee Tech</span>
+                <span class="work-figure__title">Keep the dashboard. Kill the PWA.</span>
+                <span class="work-figure__label">Mobile on TestFlight in 8 days</span>
+            </div>
+        </figure>
+
+        <article class="prose wrap-narrow">
+            <h2>What the client actually needed</h2>
+            <p>The client’s job is to work with their own clients. They had gone vendor to vendor and kept receiving something that was not quite that. They came to iCube. Development ran for more than a year and a half. By the time I stepped in, they needed a different product than the one on the table.</p>
+            <p>That is the situation forward deployed work is for. The contract is old. The codebase is older. The people who have to use the thing are still waiting.</p>
+
+            <h2>Read the code first</h2>
+            <p>I moved into the management role and started with the existing systems: a progressive web app and a web dashboard. The dashboard was worth keeping. The PWA was not. It was going to be too complex for the end user, and it would not have the features the client was asking for. Continuing to polish it would have been polite. It would not have been useful.</p>
+
+            <h2>Eight days</h2>
+            <p>Under that pressure I built a mobile app and put it on TestFlight in eight days. The client did not expect that timeline. I did not spend the week arguing for another quarter of PWA work. The constraint was the user’s hands, not the architecture we had inherited.</p>
+            <p>The app is on the Google Play Store. The Apple App Store listing is in progress.</p>
+
+            <h2>What I would repeat</h2>
+            <p>Do not defend the system you found. Defend the person who has to use the next one. Keep the piece that works (here, the dashboard). Cut the piece that will not (the PWA). Ship something they can hold. Then stay with it through the stores.</p>
+
+            <ul class="pipeline" aria-label="What we kept and what we replaced">
+                <li>Inherited PWA + dashboard</li>
+                <li>Kept dashboard</li>
+                <li>Replaced PWA with mobile</li>
+                <li>TestFlight · Play Store</li>
+            </ul>
+        </article>
+
+        <nav class="work-pager wrap-narrow" aria-label="More work">
+            <a href="heartwood.html">
+                <span>Previous</span>
+                Heartwood Logic
+            </a>
+            <a class="work-pager--next" href="aerial-eye.html">
+                <span>Next</span>
+                Aerial Eye
+            </a>
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap site-footer__inner">
+            <span>Quinn Morrison</span>
+            <a href="mailto:sqjm1127@proton.me">sqjm1127@proton.me</a>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>

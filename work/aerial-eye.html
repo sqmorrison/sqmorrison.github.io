@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aerial Eye — an open-source SIEM built after hours for the Tennessee Tech student SOC, while it was still unclear whether they would have one.">
+    <title>Aerial Eye — Quinn Morrison</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap site-header__inner">
+            <a class="wordmark" href="../index.html">Quinn Morrison</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" data-nav>
+                <ul>
+                    <li><a href="../index.html#work">Work</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <header class="article-hero">
+            <div class="wrap-narrow">
+                <p class="article-hero__kicker">Selected work · 03</p>
+                <h1>Aerial Eye</h1>
+                <p class="article-hero__dek">When I started, the student SOC at Tennessee Tech did not know whether they would have a SIEM. I did not wait to see how the cards fell. I treated them as the customer, built Aerial Eye after hours, and open-sourced it. They now run it alongside another SIEM.</p>
+                <p class="article-meta">
+                    <span>Open source · Apache 2.0</span>
+                    <span>Student SOC, Tennessee Tech</span>
+                    <span>v1.0</span>
+                </p>
+            </div>
+        </header>
+
+        <figure class="article-figure wrap">
+            <div class="work-figure work-figure--navy" aria-hidden="true">
+                <span class="work-figure__code">IDS dashboard</span>
+                <span class="work-figure__title">Logs in. Analysts out.</span>
+                <span class="work-figure__label">ClickHouse OLAP · Local AI · Heatmap</span>
+            </div>
+        </figure>
+
+        <article class="prose wrap-narrow">
+            <h2>The customer was the desk next to mine</h2>
+            <p>Aerial Eye is used primarily by the student SOC at Tennessee Tech. I started it while it was still an open question whether the team would have a SIEM at all. Under that uncertainty I did not wait for procurement to land. I took initiative and built a working system.</p>
+            <p>They were the primary customer. I built and open-sourced it on my own time, after work, with their workflow in mind — not as a portfolio piece that happened to mention security. The desk now runs Aerial Eye and one other SIEM. That is the outcome I wanted: they were not stuck if the purchase went either way.</p>
+
+            <h2>The system</h2>
+            <p>Log ingestion sits on ClickHouse, an OLAP database that can take mass logs without folding. That choice is the product. A SOC dashboard that cannot drink the firehose is a toy.</p>
+            <p>v1.0 added capabilities most open-source setups still skip:</p>
+            <ul>
+                <li>A heatmap of where activity is coming from</li>
+                <li>A downtime-cost analysis calculator, so a blocked event has a business number attached to it</li>
+                <li>Notes on alerts, so an analyst can leave a trail for the next shift</li>
+                <li>Local AI for database queries and for explaining a threat signature — the model stays on-box, so packet data does not leave the SOC to get a sentence of English</li>
+            </ul>
+
+            <ol class="pipeline" aria-label="Ingestion path">
+                <li>Network traffic</li>
+                <li>IDS (Suricata)</li>
+                <li>ClickHouse</li>
+                <li>Dashboard + local AI</li>
+            </ol>
+
+            <p>I later deployed it for the same analysts and wrote for the Cyber Sentinel, the SOC’s monthly newsletter on cyber crime. Building the tool and standing next to the people who use it were the same job.</p>
+
+            <h2>What shipped</h2>
+            <p>A SIEM a student team can stand up, shipped before anyone knew if a commercial one was coming. Source is public. If you want to read the code, start at the repo.</p>
+            <p><a href="https://github.com/sqmorrison/aerial-eye" target="_blank" rel="noopener noreferrer">github.com/sqmorrison/aerial-eye</a></p>
+
+            <ul class="stack">
+                <li>ClickHouse</li>
+                <li>Next.js</li>
+                <li>Suricata</li>
+                <li>Local AI</li>
+                <li>Docker</li>
+            </ul>
+        </article>
+
+        <nav class="work-pager wrap-narrow" aria-label="More work">
+            <a href="doable.html">
+                <span>Previous</span>
+                Doable
+            </a>
+            <a class="work-pager--next" href="heartwood.html">
+                <span>Next</span>
+                Heartwood Logic
+            </a>
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap site-footer__inner">
+            <span>Quinn Morrison</span>
+            <a href="mailto:sqjm1127@proton.me">sqjm1127@proton.me</a>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>
